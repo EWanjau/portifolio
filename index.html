@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Erasto Wamuti Wanjau — Web Developer &amp; E-Commerce Developer based in Nairobi, Kenya. Shopify, WordPress, and full-stack web solutions." />
+  <title>Erasto Wanjau · Web Developer</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Erasto Wanjau · Web Developer" />
+  <meta property="og:description" content="Results-driven Web Developer &amp; E-Commerce Developer with 3+ years building Shopify, WordPress, and full-stack digital platforms." />
+  <meta property="og:type"        content="website" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════════════ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo" id="nav-logo">EW<span>.</span></a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#home"         id="nav-home">Home</a></li>
+      <li><a href="#projects"     id="nav-projects">Projects</a></li>
+      <li><a href="#testimonials" id="nav-testimonials">Testimonials</a></li>
+      <li><a href="#contact"      id="nav-contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+        <span class="theme-icon sun"  id="theme-sun"  aria-hidden="true">☀️</span>
+        <span class="theme-icon moon" id="theme-moon" aria-hidden="true">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="menu">
+    <a href="#home"         role="menuitem">Home</a>
+    <a href="#projects"     role="menuitem">Projects</a>
+    <a href="#testimonials" role="menuitem">Testimonials</a>
+    <a href="#contact"      role="menuitem">Contact</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION: HOME
+══════════════════════════════════════════════════════ -->
+<section id="section-home" class="section" aria-label="Home">
+  <div class="container">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-tag">Open to New Projects &amp; Collaborations</div>
+        <h1>I build fast,<br><span class="accent">scalable</span><br>web experiences.</h1>
+        <p>
+          Hi, I'm <strong>Erasto Wanjau</strong> — a results-driven Web Developer &amp; E-Commerce Developer
+          with 3+ years of experience building Shopify and WordPress platforms for startups, nonprofits, and SMEs.
+          I specialise in performance optimization, SEO, and end-to-end web delivery.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary" id="cta-projects">View My Work →</a>
+          <a href="#contact"  class="btn btn-outline" id="cta-contact">Let's Talk</a>
+        </div>
+        <div class="skill-tags" aria-label="Skills">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Python</span>
+          <span class="tag">Shopify</span>
+          <span class="tag">WordPress</span>
+          <span class="tag">SEO</span>
+          <span class="tag">Web Hosting</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-avatar">👨‍💻</div>
+        <div class="floating-badge badge-exp">
+          <span class="badge-num">3+</span>Years Experience
+        </div>
+        <div class="floating-badge badge-proj">
+          <span class="badge-num">5+</span>Sites Shipped
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-row" role="list" aria-label="Key statistics">
+      <div class="stat-item" role="listitem">
+        <div class="stat-num" data-target="5" data-suffix="+">0</div>
+        <div class="stat-label">Production Sites Delivered</div>
+      </div>
+      <div class="stat-item" role="listitem">
+        <div class="stat-num" data-target="3" data-suffix="+">0</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-item" role="listitem">
+        <div class="stat-num" data-target="3" data-suffix="">0</div>
+        <div class="stat-label">Roles Held</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION: PROJECTS
+══════════════════════════════════════════════════════ -->
+<section id="section-projects" class="section" aria-label="Projects">
+  <div class="container projects-wrap">
+
+    <div class="section-label">Portfolio</div>
+    <div class="section-header">
+      <h2>My Projects</h2>
+      <button class="lock-btn" id="lock-btn" title="Admin access">🔒 Manage</button>
+    </div>
+    <p class="section-subtitle">
+      A selection of projects I've designed and built — from SaaS platforms to consumer apps.
+    </p>
+
+    <!-- Admin Bar (hidden until unlocked) -->
+    <div class="admin-bar" id="admin-bar">
+      <p>🛠️ Admin mode active — you can add and delete projects.</p>
+      <button class="btn btn-primary btn-sm" id="add-project-btn">＋ Add Project</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid-3" id="projects-grid"></div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION: TESTIMONIALS
+══════════════════════════════════════════════════════ -->
+<section id="section-testimonials" class="section" aria-label="Testimonials">
+  <div class="container testimonials-wrap">
+
+    <div class="section-label">Social Proof</div>
+    <h2>What Clients Say</h2>
+    <p class="section-subtitle">
+      Kind words from people I've had the pleasure of working with.
+    </p>
+
+    <div class="testimonials-layout">
+      <!-- Cards Grid -->
+      <div class="grid-2" id="testimonials-grid"></div>
+
+      <!-- Submit Form (sticky) -->
+      <aside class="testimonial-form-card" aria-label="Leave a testimonial">
+        <h3>Leave a Testimonial</h3>
+        <form id="testimonial-form" novalidate>
+          <div class="form-group">
+            <label for="t-name">Your Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="t-name" name="t-name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="t-role">Your Role</label>
+            <input type="text" id="t-role" name="t-role" placeholder="Product Manager" />
+          </div>
+          <div class="form-group">
+            <label for="t-company">Company</label>
+            <input type="text" id="t-company" name="t-company" placeholder="Acme Corp" />
+          </div>
+          <div class="form-group">
+            <label for="t-message">Your Message <span aria-hidden="true">*</span></label>
+            <textarea id="t-message" name="t-message" placeholder="Share your experience working with me..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Rating</label>
+            <div class="star-rating" role="radiogroup" aria-label="Star rating">
+              <input type="radio" id="star5" name="t-stars" value="5" checked /><label for="star5" title="5 stars">★</label>
+              <input type="radio" id="star4" name="t-stars" value="4" /><label for="star4" title="4 stars">★</label>
+              <input type="radio" id="star3" name="t-stars" value="3" /><label for="star3" title="3 stars">★</label>
+              <input type="radio" id="star2" name="t-stars" value="2" /><label for="star2" title="2 stars">★</label>
+              <input type="radio" id="star1" name="t-stars" value="1" /><label for="star1" title="1 star">★</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;" id="submit-testimonial">Submit Testimonial</button>
+        </form>
+      </aside>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SECTION: CONTACT
+══════════════════════════════════════════════════════ -->
+<section id="section-contact" class="section" aria-label="Contact">
+  <div class="container contact-wrap">
+
+    <!-- Info Side -->
+    <div class="contact-info">
+      <div class="section-label">Get in Touch</div>
+      <h2>Let's Work<br>Together.</h2>
+      <p>
+        Have a project in mind or want to discuss a new opportunity?
+        I'm available for freelance work, full-time roles, and collaborations.
+        Drop me a message and I'll get back to you within 24 hours.
+      </p>
+
+      <div class="contact-detail">
+        <div class="contact-icon" aria-hidden="true">📧</div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          <span>wamwanjau@gmail.com</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon" aria-hidden="true">📞</div>
+        <div class="contact-detail-text">
+          <strong>Phone</strong>
+          <span>+254708770938</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon" aria-hidden="true">📍</div>
+        <div class="contact-detail-text">
+          <strong>Location</strong>
+          <span>Nairobi, Kenya (Remote-friendly)</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon" aria-hidden="true">⏰</div>
+        <div class="contact-detail-text">
+          <strong>Availability</strong>
+          <span>Open to new projects &amp; collaborations</span>
+        </div>
+      </div>
+
+      <div class="socials-row" aria-label="Social links">
+        <a href="https://github.com" target="_blank" rel="noopener" class="social-btn" id="social-github"   aria-label="GitHub">🐙 GitHub</a>
+        <a href="#" class="social-btn" id="social-linkedin" aria-label="LinkedIn">💼 LinkedIn</a>
+        <a href="#" class="social-btn" id="social-twitter"  aria-label="Twitter">🐦 Twitter</a>
+      </div>
+    </div>
+
+    <!-- Form Side -->
+    <div class="contact-form-card">
+      <h3>Send a Message</h3>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="c-name">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="c-name" name="c-name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="c-email">Email Address <span aria-hidden="true">*</span></label>
+          <input type="email" id="c-email" name="c-email" placeholder="jane@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="c-subject">Subject</label>
+          <input type="text" id="c-subject" name="c-subject" placeholder="Project Inquiry" />
+        </div>
+        <div class="form-group">
+          <label for="c-message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="c-message" name="c-message" placeholder="Tell me about your project or idea..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;" id="send-message-btn">Send Message ✉️</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer-inner">
+    <div class="footer-logo">EW<span>.</span></div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-copy">
+      &copy; <span id="footer-year"></span> Erasto Wanjau. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════════════════
+     TOAST
+══════════════════════════════════════════════════════ -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- ══════════════════════════════════════════════════════
+     ADD PROJECT MODAL
+══════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="project-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="modal-title">Add New Project</h3>
+      <button class="modal-close" id="project-modal-close" aria-label="Close modal">✕</button>
+    </div>
+    <form id="add-project-form" novalidate>
+      <div class="form-group">
+        <label for="proj-title">Project Title <span aria-hidden="true">*</span></label>
+        <input type="text" id="proj-title" placeholder="My Awesome App" required />
+      </div>
+      <div class="form-group">
+        <label for="proj-desc">Description <span aria-hidden="true">*</span></label>
+        <textarea id="proj-desc" placeholder="A short description of what this project does..." required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="proj-tech">Tech Stack <span style="color:var(--text-muted);font-weight:400">(comma-separated)</span></label>
+        <input type="text" id="proj-tech" placeholder="React, Node.js, MongoDB" />
+      </div>
+      <div class="form-group">
+        <label for="proj-live">Live URL</label>
+        <input type="url" id="proj-live" placeholder="https://myapp.com" />
+      </div>
+      <div class="form-group">
+        <label for="proj-github">GitHub URL</label>
+        <input type="url" id="proj-github" placeholder="https://github.com/user/repo" />
+      </div>
+      <div class="form-group">
+        <label for="proj-emoji">Emoji Icon</label>
+        <input type="text" id="proj-emoji" placeholder="💻" maxlength="4" />
+      </div>
+      <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:4px;">
+        <button type="button" class="btn btn-ghost" id="cancel-project-btn"
+                onclick="document.getElementById('project-modal-overlay').classList.remove('open')">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="save-project-btn">Save Project</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     SCRIPTS (order matters)
+══════════════════════════════════════════════════════ -->
+<script src="js/storage.js"></script>
+<script src="js/home.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/testimonials.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
+<script>
+  // Footer year
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
